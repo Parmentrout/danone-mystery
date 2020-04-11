@@ -8,26 +8,15 @@ $(() => {
     },
     {
       number: 2,
-      password: 'alehljelakhef'
+      password: 'test'
     },
     {
       number: 3,
       password: 'kitchen'
-    },
-    {
-      number: 4,
-      password: 'alehfleahl'
-    },
-    {
-      number: 5,
-      password: 'dgdgdrgdgdgfdgfdgfd'
-    },
-    {
-      number: 6,
-      password: 'den'
     }];
 
     function toggleDoor(element) {
+      
       element.classList.toggle("doorOpen");
     }
 
@@ -50,10 +39,6 @@ $(() => {
       }
 
     });
-
-    $('#key-logo').click(() => {
-      $('#secretModal').modal();
-    })
 
     function openDoor(doorNumber, doorPassword) {
       let password = $(`#door${doorNumber}-code`).first().val().toLowerCase();

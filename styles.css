@@ -183,14 +183,7 @@
   top: 0;
   left: 0;
 }
-.curtain__wrapper input[type=checkbox]:checked ~ div.curtain__panel--left {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.curtain__wrapper input[type=checkbox]:checked ~ div.curtain__panel--right {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
+/* nb */
 .curtain__panel {
   display: -webkit-box;
   display: flex;
