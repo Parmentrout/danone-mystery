@@ -4,7 +4,7 @@ $(() => {
     // If you are reading this, it is cheating.  I'm not mad, just disappointed...
     const doorData = [{
       number: 1,
-      password: 'pantry'
+      password: 'test'
     },
     {
       number: 2,
@@ -12,12 +12,15 @@ $(() => {
     },
     {
       number: 3,
-      password: 'kitchen'
+      password: 'test'
     }];
 
-    function toggleDoor(element) {
-      
-      element.classList.toggle("doorOpen");
+    function toggleLeft(element) {
+      element.classList.toggle("open-left");
+    }
+
+    function toggleRight(element) {
+      element.classList.toggle("open-right");
     }
 
     for (let door of doorData) {
@@ -45,7 +48,8 @@ $(() => {
 
       if (password === doorPassword) {
         console.log(password + ' ' + doorPassword);
-        toggleDoor(document.querySelector(`#door${doorNumber}`));
+        toggleLeft(document.querySelector(`#curtain${doorNumber}-left`))
+        toggleRight(document.querySelector(`#curtain${doorNumber}-right`))        
         hideError(doorNumber);
       } else {
         showError(doorNumber);

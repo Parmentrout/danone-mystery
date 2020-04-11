@@ -16,10 +16,11 @@
         <div class="container">
             <div class="jumbotron danone-jumbo">
                 <h1>Locked Out! A Danone Mystery...</h1>
-                <p>Everyone has been locked out of the office! How in the hell will you get back in!?
-                    Luckily, your orchestrator and part-time wizard <b>Jen Pease</b> will send you weekly clues to escape.  
-                    Each week will unlock a different combination code 
-                    and when they are all open you can get back in!</p>
+                <p>You were working on a new food formula late last night and when you left you accidently reset the company's 
+                   security code. Now everyone has been locked out of the office! It's up to you to figure out the new code so 
+                   everyone can get back in! Luckily, your orchestrator and part-time wizard <b>Jen Pease</b> will send 
+                   you weekly clues to escape. Each week will unlock one part of the code and when they are all open 
+                   you can get back in!</p>
             </div>
         </div>
 
@@ -59,36 +60,44 @@
             </div>
           </div>
             <div class="row">
-              <div class="col-sm">
-                <!-- Do we like this? -->
+              <div class="col-sm mb-2">
                 <div class="curtain">
-                  <div class="curtain__wrapper">
-                    <input type="checkbox" checked>
-                    
-                    <div class="curtain__panel curtain__panel--left">
+                  <div class="curtain-wrapper">
+                    <div id="curtain1-left" class="curtain-panel curtain-panel-left">
                       <h1>? &nbsp;</h1>
-                    </div> <!-- curtain__panel -->
-                    
-                    <div class="curtain__content">
+                    </div> 
+                    <div class="curtain-content">
                       <h2>Achievement Unlocked!</h2>
                     </div>
                     
-                    <div class="curtain__panel curtain__panel--right">
+                    <div id="curtain1-right" class="curtain-panel curtain-panel-right">
                       <h1>&nbsp; ?</h1>
-                    </div> <!-- curtain__panel -->
-                    
-                  </div> <!-- curtain__wrapper -->
-                </div> <!-- curtain -->
+                    </div>
+                  </div>
+                </div>
                   <div class="form-inline mt-2 justify-content-center">
-                    <input id="door1-code" type="text" class="form-control mr-2 key-input" placeholder="Door Password">
+                    <input id="door1-code" type="text" class="form-control mr-2 key-input" placeholder="Week 1 Password">
                     <button id="door1-form" type="submit" class="btn btn-sm btn-secondary"><span class="target">&target;</span></button>
                   </div>
                   <p id="door1Error" class="text-center error-message mt-sm-1">Incorrect password!</p>
               </div>
               <div class="col-sm">
-                
+                <div class="curtain">
+                  <div class="curtain-wrapper">
+                    <div id="curtain2-left" class="curtain-panel curtain-panel-left">
+                      <h1>? &nbsp;</h1>
+                    </div> 
+                    <div class="curtain-content">
+                      <h2>Achievement Unlocked!</h2>
+                    </div>
+                    
+                    <div id="curtain2-right" class="curtain-panel curtain-panel-right">
+                      <h1>&nbsp; ?</h1>
+                    </div>
+                  </div>
+                </div>
                 <div class="form-inline mt-2 justify-content-center">
-                  <input id="door2-code" type="text" class="form-control mr-2 key-input" placeholder="Door Password">
+                  <input id="door2-code" type="text" class="form-control mr-2 key-input" placeholder="Week 2 Password">
                   <button id="door2-form" type="submit" class="btn btn-sm btn-secondary">
                     <span class="target">&target;</span>
                   </button>
@@ -96,9 +105,22 @@
                 <p id="door2Error" class="text-center error-message mt-sm-1">Incorrect password!</p>
               </div>
               <div class="col-sm">
-               
+                <div class="curtain">
+                  <div class="curtain-wrapper">
+                    <div id="curtain3-left" class="curtain-panel curtain-panel-left">
+                      <h1>? &nbsp;</h1>
+                    </div> 
+                    <div class="curtain-content">
+                      <h2>Achievement Unlocked!</h2>
+                    </div>
+                    
+                    <div id="curtain3-right" class="curtain-panel curtain-panel-right">
+                      <h1>&nbsp; ?</h1>
+                    </div>
+                  </div>
+                </div>
                 <div class="form-inline mt-2 justify-content-center">
-                  <input id="door3-code" type="text" class="form-control mr-2 key-input" placeholder="Door Password">
+                  <input id="door3-code" type="text" class="form-control mr-2 key-input" placeholder="Week 3 Password">
                   <button id="door3-form" type="submit" class="btn btn-sm btn-secondary">
                     <span class="target">&target;</span>
                   </button>
