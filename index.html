@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Locked In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link href="./styles.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="navbar-brand mb-0 h1"><img id="key-logo" class="nav-icon" src="danone_logo.png"></span>
+        </nav>
+        <div class="container">
+            <div class="jumbotron danone-jumbo">
+                <h1>Locked Out! A Danone Mystery...</h1>
+                <p>Everyone has been locked out of the office! How in the hell will you get back in!?
+                    Luckily, your orchestrator and part-time wizard <b>Jen Pease</b> will send you weekly clues to escape.  
+                    Each week will unlock a different combination code 
+                    and when they are all open you can get back in!</p>
+            </div>
+        </div>
+
+        <div class="container">
+           <div id="myModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="modal-header">
+                  <h5 class="modal-title">You have unlocked your office!!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                  <img class="img img-fluid center-block" src="dancing_wizard.webp">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-sm">
+                <!-- Do we like this? -->
+                <div class="curtain">
+                  <div class="curtain__wrapper">
+                    <input type="checkbox" checked>
+                    
+                    <div class="curtain__panel curtain__panel--left">
+                      <h1>? &nbsp;</h1>
+                    </div> <!-- curtain__panel -->
+                    
+                    <div class="curtain__content">
+                      <h2>Achievement Unlocked!</h2>
+                    </div>
+                    
+                    <div class="curtain__panel curtain__panel--right">
+                      <h1>&nbsp; ?</h1>
+                    </div> <!-- curtain__panel -->
+                    
+                  </div> <!-- curtain__wrapper -->
+                </div> <!-- curtain -->
+                  <div class="form-inline mt-2 justify-content-center">
+                    <input id="door1-code" type="text" class="form-control mr-2 key-input" placeholder="Door Password">
+                    <button id="door1-form" type="submit" class="btn btn-sm btn-secondary"><span class="target">&target;</span></button>
+                  </div>
+                  <p id="door1Error" class="text-center error-message mt-sm-1">Incorrect password!</p>
+              </div>
+              <div class="col-sm">
+                
+                <div class="form-inline mt-2 justify-content-center">
+                  <input id="door2-code" type="text" class="form-control mr-2 key-input" placeholder="Door Password">
+                  <button id="door2-form" type="submit" class="btn btn-sm btn-secondary">
+                    <span class="target">&target;</span>
+                  </button>
+                </div>
+                <p id="door2Error" class="text-center error-message mt-sm-1">Incorrect password!</p>
+              </div>
+              <div class="col-sm">
+               
+                <div class="form-inline mt-2 justify-content-center">
+                  <input id="door3-code" type="text" class="form-control mr-2 key-input" placeholder="Door Password">
+                  <button id="door3-form" type="submit" class="btn btn-sm btn-secondary">
+                    <span class="target">&target;</span>
+                  </button>
+                </div>
+                <p id="door3Error" class="text-center error-message mt-sm-1">Incorrect password!</p>
+              </div>
+            </div>
+
+           
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
