@@ -25,11 +25,14 @@
   margin-top: 25px;
 }
 
-.secret-key {
-  max-height: 30px;
-  margin-left: -50px;
-  margin-top: 75px;
-  margin-bottom: 50px;
+.key-input {
+  max-width: 150px;
+}
+
+.footer-text {
+  float: right;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 /* Here be confetti */
@@ -216,9 +219,10 @@
 .curtain-content {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 4rem 0;
   position: absolute;
   text-align: center;
   z-index: 1;
   width: 200px;
+  height: 200px;
 }
