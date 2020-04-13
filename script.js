@@ -3,35 +3,37 @@ $(() => {
     // If you are reading this, it is cheating.  I'm not mad, just disappointed...
     const doorData = [{
       number: 1,
-      password: 'test1',
+      password: 'manifesto',
       solved: false
     },
     {
       number: 2,
-      password: 'test2',
+      password: 'vision',
       solved: false
     },
     {
       number: 3,
-      password: 'test3',
+      password: 'oat yeah',
       solved: false
     }];
 
-    function toggleLeft(element) {
-      element.classList.toggle("open-left");
-    }
+    function unlock(element) {
+      element.classList.toggle("fa-lock");
+      element.classList.toggle("fa-unlock-alt");
 
-    function toggleRight(element) {
-      element.classList.toggle("open-right");
+      element.classList.toggle("large-locked");
+      element.classList.toggle("large-unlocked");
     }
 
     for (let door of doorData) {
       $(`#door${door.number}-form`).click((event) => {
+        console.log('Clicked');
         openDoor(door);
       });
     }
 
     function openDoor(door) {
+      console.log('open door');
       let password = $(`#door${door.number}-code`).first().val().toLowerCase();
 
       if (password === door.password) {
@@ -40,9 +42,7 @@ $(() => {
         if (finalSolve) {
           $('#myModal').modal();
         }
-        console.log(password + ' ' + door.password);
-        toggleLeft(document.querySelector(`#curtain${door.number}-left`))
-        toggleRight(document.querySelector(`#curtain${door.number}-right`))        
+        unlock(document.querySelector(`#lock${door.number}`));  
         hideError(door.number);
       } else {
         door.solved = false;

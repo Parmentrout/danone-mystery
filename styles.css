@@ -26,13 +26,34 @@
 }
 
 .key-input {
-  max-width: 150px;
+  max-width: 125px;
+}
+
+.mid-lock {
+  margin-top: -125px;
 }
 
 .footer-text {
   float: right;
   font-weight: bold;
   font-size: 12px;
+}
+
+.lock {
+  font-size: 300px !important;
+  display: block !important;
+}
+
+.large-locked {
+  color: gray;
+}
+
+.large-unlocked {
+  color: #005EB8;
+}
+
+.gimme-lotta-space-top {
+  margin-top: 50px;
 }
 
 /* Here be confetti */
